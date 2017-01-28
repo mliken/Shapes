@@ -5,12 +5,12 @@ function Pentagon (length1, length2, length3, length4, length5){
 
 	//properties
 	 this.type = "Pentagon";
-	 this.side1 = length1;
-	 this.side2 = length2;
-	 this.side3 = length3;
-	 this.side4 = length4;
-	 this.side5 = length5;
-}
+	 this.length1 = length1;
+	 this.length2 = length2;
+	 this.length3 = length3;
+	 this.length4 = length4;
+	 this.length5 = length5;
+};
 
 //export the Pentagon function
 module.exports = Pentagon;

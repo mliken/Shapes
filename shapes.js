@@ -6,9 +6,9 @@ var Square = require('./Square');
 var Triangle = require('./Triangle');
 
 //import content of Pentagon.js
-var Pentagon = require('Pentagon');
+var Pentagon = require('./Pentagon');
 
-function Shape(type){
+function Shapes(type){
 
 //property of type
 	this.type = type;	
@@ -34,23 +34,23 @@ Shapes.prototype.get_totalLength = function () {
 };
 
 //where inheritance occurs from shape to square
-Square.prototype = new Shape ();
+Square.prototype = new Shapes ();
 // Otherwise instances of square would have a constructor of shape
 Square.prototype.constructor = Square;
 
 //shape to triangle
-Triangle.prototype = new Shape ();
+Triangle.prototype = new Shapes ();
 Triangle.prototype.constructor = Triangle;
 
 //shape to pentagon
-Pentagon.prototype = new Shape();
+Pentagon.prototype = new Shapes();
 Pentagon.prototype.constructor = Pentagon;
 
 //creating variables of each constructor
 var triangle1 = new Triangle(3,4,5);
-var square1 = new Square (4);
-var pentagon1 = Pentagon (1,2,3,4,5);
-var shape = new Shape ("shape");
+var square1 = new Square(4);
+var pentagon1 = new Pentagon(1,2,3,4,5);
+var shape = new Shapes("shapes");
 
 //getting different types
 console.log (triangle1.get_type());
