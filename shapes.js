@@ -22,6 +22,7 @@ Shapes.prototype.get_type = function(){
 
 //adding a method to the constructor so that it will be global to all functions
 Shapes.prototype.get_totalLength = function () {
+	console.log(this);
 	var length = 0;
 	if (this.type === 'Triangle'){
 		length = this.side1 + this.side2 + this.side3;
@@ -33,24 +34,12 @@ Shapes.prototype.get_totalLength = function () {
 	} return length;
 };
 
-//where inheritance occurs from shape to square
-Square.prototype = new Shapes ();
-// Otherwise instances of square would have a constructor of shape
-Square.prototype.constructor = Square;
-
-//shape to triangle
-Triangle.prototype = new Shapes ();
-Triangle.prototype.constructor = Triangle;
-
-//shape to pentagon
-Pentagon.prototype = new Shapes();
-Pentagon.prototype.constructor = Pentagon;
 
 //creating new child objects for each Triangle, Sqaure and Pentagon constructors
 var triangle1 = new Triangle(3,4,5);
 var pentagon1 = new Pentagon(1,2,3,4,5);
-var square1 = new Square(8);
-var shapes = new Shapes("shapes");
+var square1 = new Square(4);
+//var shapes = new Shapes("shapes");
 
 //getting different types
 console.log (triangle1.get_type());
@@ -59,13 +48,14 @@ console.log(square1.get_type());
 console.log (square1.get_totalLength());
 console.log(pentagon1.get_type());
 console.log(pentagon1.get_totalLength());
-console.log(shapes);
+//console.log(shapes);
+
 
 // double checking instanceof works 
 console.log(triangle1 instanceof Triangle);
 console.log (square1 instanceof Square);
 console.log(pentagon1 instanceof Pentagon);
-console.log(shapes instanceof Shapes);
+//console.log(shapes instanceof Shapes);
 
 
 

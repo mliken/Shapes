@@ -1,6 +1,12 @@
 //'strict';
 
-//var Shapes = require('./Shapes.js');
+var Shapes = require('./Shapes.js');
+
+//where inheritance occurs from shape to square
+Square.prototype = new Shapes ();
+// Otherwise instances of square would have a constructor of shape
+Square.prototype.constructor = Square;
+
 //create a Square constructor, using side as parameter
 function Square (side) {
 	//properties
