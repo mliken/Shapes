@@ -1,15 +1,15 @@
 var Shapes = require('./Shapes.js');
 
 //create a Square constructor,, using length as parameter
-function Pentagon (length1, length2, length3, length4, length5){
+function Pentagon (side1, side2, side3, side4, side5){
 
 	//properties
 	 this.type = "Pentagon";
-	 this.length1 = length1;
-	 this.length2 = length2;
-	 this.length3 = length3;
-	 this.length4 = length4;
-	 this.length5 = length5;
+	 this.side1 = side1;
+	 this.side2 = side2;
+	 this.side3 = side3;
+	 this.side4 = side4;
+	 this.side5 = side5;
 };
 
 //export the Pentagon function

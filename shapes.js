@@ -1,11 +1,11 @@
-'strict'
-//import content of Square.js
+'strict';
+//importing content of Square.js
 var Square = require('./Square');
 
-//import content of Triangle.js
+//importing content of Triangle.js
 var Triangle = require('./Triangle');
 
-//import content of Pentagon.js
+//importing content of Pentagon.js
 var Pentagon = require('./Pentagon');
 
 function Shapes(type){
@@ -14,7 +14,7 @@ function Shapes(type){
 	this.type = type;	
 }
 
-//adding a method to the constructor so that it will be global to all function DanDaManTran was here :P heheheh 
+//adding a method to the constructor so that it will be global to all function 
 Shapes.prototype.get_type = function(){
 	console.log ("This shape is" + this.type);
 	return;
@@ -61,7 +61,7 @@ console.log(pentagon1.get_type());
 console.log(pentagon1.get_totalLength());
 console.log(shape);
 
-// double instanceof works 
+// double checking instanceof works 
 console.log(triangle1 instanceof Triangle);
 console.log (square1 instanceof Square);
 console.log(pentagon1 instanceof Pentagon);
