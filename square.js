@@ -1,7 +1,7 @@
-'strict';
+//'strict';
 
-var Shapes = require('./Shapes.js');
-//create a Square constructor,, using length as parameter
+//var Shapes = require('./Shapes.js');
+//create a Square constructor, using side as parameter
 function Square (side) {
 	//properties
 	this.type = "Square";

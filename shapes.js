@@ -46,11 +46,11 @@ Triangle.prototype.constructor = Triangle;
 Pentagon.prototype = new Shapes();
 Pentagon.prototype.constructor = Pentagon;
 
-//creating variables of each constructor
+//creating new child objects for each Triangle, Sqaure and Pentagon constructors
 var triangle1 = new Triangle(3,4,5);
-var square1 = new Square(4);
 var pentagon1 = new Pentagon(1,2,3,4,5);
-var shape = new Shapes("shapes");
+var square1 = new Square(8);
+var shapes = new Shapes("shapes");
 
 //getting different types
 console.log (triangle1.get_type());
@@ -59,13 +59,13 @@ console.log(square1.get_type());
 console.log (square1.get_totalLength());
 console.log(pentagon1.get_type());
 console.log(pentagon1.get_totalLength());
-console.log(shape);
+console.log(shapes);
 
 // double checking instanceof works 
 console.log(triangle1 instanceof Triangle);
 console.log (square1 instanceof Square);
 console.log(pentagon1 instanceof Pentagon);
-console.log(shape instanceof Shape);
+console.log(shapes instanceof Shapes);
 
 
 

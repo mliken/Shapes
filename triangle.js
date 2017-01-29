@@ -1,6 +1,6 @@
-'strict';
+//'strict';
 
-var Shapes = require('./Shapes.js');
+//var Shapes = require('./Shapes.js');
 
 //create triangle constructor using side
 function Triangle (side1, side2, side3) {
