@@ -1,6 +1,6 @@
 var Shapes = require('./Shapes.js');
 
-//create a Square constructor,, using length as parameter
+//create a Square constructor, using side as length
 function Pentagon (side1, side2, side3, side4, side5){
 
 	//properties
