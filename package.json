@@ -1,0 +1,21 @@
+{
+  "name": "shapes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pentagon.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mliken/Shapes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mliken/Shapes/issues"
+  },
+  "homepage": "https://github.com/mliken/Shapes#readme"
+}
