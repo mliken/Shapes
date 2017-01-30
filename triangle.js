@@ -1,5 +1,5 @@
 //require shapes file
-var Shape = require('./shape.js');
+var Shapes = require('./shapes.js');
 
 //shape to triangle
 Pentagon.prototype = new Shapes();
