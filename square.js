@@ -1,6 +1,5 @@
-//'strict';
-
-var Shapes = require('./Shapes.js');
+//require shapes file
+var Shapes = require('./shapes.js');
 
 //where inheritance occurs from shape to square
 Square.prototype = new Shapes ();

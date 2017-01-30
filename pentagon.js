@@ -1,4 +1,5 @@
-var Shapes = require('./Shapes.js');
+//requires shapes file
+var Shape = require('./shape.js');
 
 //shape to pentagon
 Pentagon.prototype = new Shapes();

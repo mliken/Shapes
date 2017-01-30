@@ -1,20 +1,20 @@
-//'strict';
-
-var Shapes = require('./Shapes.js');
+//require shapes file
+var Shape = require('./shape.js');
 
 //shape to triangle
-Triangle.prototype = new Shapes ();
-Triangle.prototype.constructor = Triangle;
+Pentagon.prototype = new Shapes();
+Pentagon.prototype.constructor = Pentagon;
 
-//create triangle constructor using side
-function Triangle (side1, side2, side3) {
+
+function Triangle (side1, side2, side3){
 
 	//properties
-	this.type = "Triangle";
-	this.side1 = side1;
-	this.side2 = side2;
-	this.side3 = side3;
+	 this.type = "Triangle";
+	 this.side1 = side1;
+	 this.side2 = side2;
+	 this.side3 = side3;
+	 
 };
 
-//export the triangle function
+//export the Pentagon function
 module.exports = Triangle;
